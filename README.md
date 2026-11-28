@@ -33,7 +33,13 @@ treated first.
 
 ```text
 DSA-Assignment/
-|-- basic       # C source for the emergency triage application
+|-- main.c          # Menu loop and action handlers
+|-- heap.c          # Min-heap implementation
+|-- ui.c            # Input helper, Visuals
+|-- heap.h          # Patient/Heap struct definition and Heap API
+|-- ui.h            # UI API
+|-- config.h        # Constants
+|-- .gitignore
 `-- README.md
 ```
 
@@ -50,21 +56,21 @@ macOS, the source uses standard ANSI terminal colors.
 ### Windows (MinGW or GCC)
 
 ```powershell
-gcc -x c basic -o hospital-triage.exe
+gcc main.c heap.c ui.c -o hospital-triage.exe
 .\hospital-triage.exe
 ```
 
 ### Linux or macOS
 
 ```bash
-gcc -x c basic -o hospital-triage
+gcc main.c heap.c ui.c -o hospital-triage
 ./hospital-triage
 ```
 
 For stricter compiler checks:
 
 ```bash
-gcc -Wall -Wextra -Wpedantic -x c basic -o hospital-triage
+gcc -Wall -Wextra -Wpedantic main.c heap.c ui.c -o hospital-triage
 ```
 
 ## Menu Options
