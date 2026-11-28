@@ -1,4 +1,5 @@
-    # Hospital Emergency Triage System
+<p align="center"><img width="550" height="117" alt="image" src="https://github.com/user-attachments/assets/744f8232-9d8c-4a6c-aa33-ba946a9131e3" /></p>
+
 
 A console-based emergency room queue written in C using a binary min-heap.
 It prioritizes patients by triage level and, for patients with the same priority,
@@ -15,6 +16,9 @@ uses arrival order as the tie-breaker.
 - Discharge or remove a waiting patient
 - Display all patients in treatment order
 - Inspect the internal heap array
+
+<img width="300" height="239" alt="image" src="https://github.com/user-attachments/assets/4ba3cd5f-adf5-452d-97cc-9a16f50e9b97" />
+
 
 ## Priority Levels
 
